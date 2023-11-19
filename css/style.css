@@ -1,0 +1,253 @@
+:root { 
+    --primary: rgb(255, 255, 255);
+    --background:rgb(49, 255, 135);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    
+}
+
+
+body{
+    font-family: 'Maven Pro',sans-serif;
+    background-color: var(--background);
+    color: white;
+    min-height: 3000px;
+}
+
+/*Navbar*/
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 1rem 7%;
+    background-color:rgb(234, 223, 14);
+    border-bottom: 1px solid var(--primary);
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 9999;
+}
+
+
+.navbar .navbar-logo {
+    font-size:1.5rem;
+    font-weight:500;
+    color: black;
+    
+    
+}
+
+.navbar .navbar-logo span{
+    color: var(--primary);
+}
+
+
+.navbar .navbar-nav a {
+    color:black;
+    display: inline-block;
+    font-weight: 500;
+    margin: 0 1rem;
+
+}
+
+.navbar .navbar-nav a:hover {
+    color:var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+content:'';
+display:block;
+padding-bottom:0.5rem;
+border-bottom: 0.1rem solid var(--primary);
+transform: scaleX(0);
+transition:0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform:scaleX(0.8);
+}
+
+/*home section*/
+.home {
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    background-image: url(Images/seragam.jpg);
+    background-repeat: no-repeat;
+    background-size :cover;
+    background-position:center;
+    position:relative;
+}
+
+.back {
+    background-image: url(images/seragam.jpg);
+    background-size: cover;
+    padding-top: 2%;
+    padding-bottom: 40%;
+    background-attachment: fixed;
+}
+
+p {
+    background-color: white;
+    color: black;
+    font-family: 'Franklin Gothic';
+    text-align: justify;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+}
+
+.par {
+    background-color: black;
+    color: white;
+    padding-top: 0;
+    padding-left: 10px;
+    border-left: 2px solid red;
+    margin-left: 12px;
+}
+
+.head2 {
+    color: white;
+    background: black;
+    text-align: center;
+}
+
+/*tulisan berjalan*/
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee-text {
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 5s linear infinite;
+    font-size: 2rem;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+
+/*gallery*/
+.gallery p {
+    text-align: center;
+    max-width: 30rem;
+    font-weight: 100;
+    line-height: 1.5rem;
+}
+
+/*kontak*/
+.kontak .row {
+    display: flex;
+    margin: 2rem;
+    background-color: green;
+    flex-wrap: wrap;
+}
+
+.kontak .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*registrasi*/
+.registrasi h2 {
+    font-size: 30px;
+    text-align: center;
+
+}
+
+/*side bar*/
+/*sidebar*/
+
+
+.Sidebar {
+    height: 100%;
+    width : 0;
+    position: fixed;
+    z-index:9999;
+    top: 0;
+    right: 0;
+    background-color:rgb(255, 242, 0);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+  }
+  
+  .Sidebar a {
+    padding: 8px 8px 7px 32px;
+    text-decoration: none;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .Sidebar a:hover {
+    color: var(--primary);
+  }
+  
+  .Sidebar .closebutton {
+    position: absolute;
+    top: 0;
+    color: black;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .Sidebar .sidebar-logo {
+      font-size: 1.5rem;
+      font-weight:700;
+      color: black;
+      margin-right: 20%;
+      margin-left: 20%;
+     
+  }
+  
+  
+  .Sidebar .sidebar-logo span{
+      color: var(--primary);
+  }
+  
+  
+  #main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+    color: black;
+  }
+  
+   #clock {
+      font-size: 1.5rem;
+      color: black;
+      font-weight: 400;
+      width: 50px;
+      margin-left: 20%;
+      margin-right: 20%;
+      text-align: center;
+  }
+
+/*footer*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
