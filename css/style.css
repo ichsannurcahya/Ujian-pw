@@ -15,10 +15,10 @@
 
 
 body{
-    font-family: 'Maven Pro',sans-serif;
+    font-family: 'Poppins',sans-serif;
     background-color: var(--background);
     color: white;
-    min-height: 3000px;
+    min-height: 3100px;
 }
 
 /*Navbar*/
